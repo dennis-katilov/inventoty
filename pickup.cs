@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    private Invenyory Invenyory;
+    private Invenyory invenyory;
     //item in slot
     public GameObject slotButton;
 
     private void Start()
     {
-        
+        //find a player by tag "Player"
+        invenyory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+    }
+
+    //function for player interaction with an item
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        //if the item touched the Player tag
+        if (other.CompareTag("Player"))
+        {
+            for (int i = 0; i < invenyory.slot.length; i++)
+            {
+                
+            }
+        }
     }
 }
