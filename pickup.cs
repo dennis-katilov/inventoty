@@ -22,7 +22,14 @@ public class Pickup : MonoBehaviour
         {
             for (int i = 0; i < invenyory.slot.length; i++)
             {
-                
+                //fill the slots
+                if (invenyory.isFull[i] == false)
+                {
+                    invenyory.isFull[i] = true;
+                    Instantiate(slotButton, invenyory.slots[i].transform);
+                    Destroy(GameObject);
+                    break;
+                }
             }
         }
     }
