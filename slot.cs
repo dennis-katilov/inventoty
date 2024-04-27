@@ -21,4 +21,14 @@ public class Slot : MonoBehaviour
         }
    }
 
+    //drop the items
+   public void DropItem()
+   {
+        foreach (Transfort child in transfort)
+        {
+            child.GetComponent<Spawn()>.SpawnDropedItem();
+            GameObject.Destroy(child.gameObject);
+        }
+   }
+
 }
