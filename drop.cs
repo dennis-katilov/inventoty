@@ -12,4 +12,9 @@ public class Drop : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    public void SpawnDropedItem()
+    {
+        Vector2 playerPos = new Vector2(player.position.x + 2, player.position.Y -1)
+    }
+
 }
