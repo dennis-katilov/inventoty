@@ -1,2 +1,2 @@
 # inventoty
-//first
+the simplest script for interacting with a character and inventory in a 2D platformer, which I wrote a long time ago for my project. It simply allows you to pick up items, accumulate them and throw them away
