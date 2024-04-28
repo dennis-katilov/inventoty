@@ -14,7 +14,8 @@ public class Drop : MonoBehaviour
 
     public void SpawnDropedItem()
     {
-        Vector2 playerPos = new Vector2(player.position.x + 2, player.position.Y -1)
+        Vector2 playerPos = new Vector2(player.position.x + 2, player.position.y -1);
+        Instantiate(item, playerPos, Quaternion.identety);
     }
 
 }
